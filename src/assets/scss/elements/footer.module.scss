@@ -1,0 +1,60 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.footer {
+    background-color: $footer-color;
+    font-family: "Open Sans";
+    .container {
+        .footer__menu_list {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            .menu_list,
+            .menu__liUp {
+                list-style: none;
+                color: $color-black;
+                font-size: 0.9rem;
+                text-decoration: none;
+                padding-left: 10px;
+                &:hover {
+                    color: $color-light-grey;
+                }
+            }
+            .menu__liUp {
+                font-size: 1.2rem;
+            }
+        }
+
+        .footer__contact {
+            padding: 10px;
+            p {
+                color: $color-light-grey;
+                font-size: 0.9rem;
+                margin: 0;
+                padding-left: 10px;
+            }
+        }
+
+        .footer__ico {
+            padding: 0 0 10px 15px;
+
+            a {
+                padding: 0 5px;
+            }
+        }
+
+        .footer__menu {
+            padding: 10px 0;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        @include flex-fsa;
+    }
+    .footer__ico {
+        display: flex;
+        align-items: flex-end;
+    }
+}

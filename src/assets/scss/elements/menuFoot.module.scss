@@ -1,0 +1,52 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.menu__foot {
+    text-align: center;
+
+    .menu__footImg {
+        width: 150px;
+        height: 150px;
+        // border-radius: 50%;
+        // margin: 70px 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            margin: 0;
+        }
+    }
+
+    .company__nag {
+        font-size: 2rem;
+        font-family: "Architects Daughter";
+        padding-top: 50px;
+    }
+
+    .menu__footText {
+        // padding-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    .menu__footNagLine {
+        width: 150px;
+        border-top: 4px solid $color-primary;
+        padding-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .menu__footCards {
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 792px) {
+    .menu__footBar {
+        @include flex-center;
+    }
+    .menu__footCards {
+        padding: 0 80px;
+    }
+}

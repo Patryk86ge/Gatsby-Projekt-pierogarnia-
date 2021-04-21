@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;600;700&display=swap');
+body {
+    box-sizing: border-box;
+    font-family:'Architects Daughter', 'cursive','Open Sans', sans-serif;
+    overflow-x:hidden;
+}
+.container {
+  margin: 0 auto;
+  width: 1352px;
+  @media(max-width: 1352px) {
+    width: 100%;
+    //padding: 0 15px;
+  }
+}

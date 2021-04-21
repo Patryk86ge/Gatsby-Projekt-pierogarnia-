@@ -1,0 +1,58 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.section__contact {
+    .contact__nag {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 2rem;
+        font-family: "Architects Daughter";
+    }
+
+    .contact__footNagLine {
+        width: 150px;
+        border-top: 4px solid $color-primary;
+        padding-top: 20px;
+        display: flex;
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact__footText {
+        padding-top: 5px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contact__ico {
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+        }
+        p{
+            margin: 0;
+        }
+    }
+
+    .phone,
+    .mail,
+    .timeOpen,
+    .place {
+        text-align: center;
+        color: black;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 792px) {
+    .contact__bar {
+        display: flex;
+    }
+}

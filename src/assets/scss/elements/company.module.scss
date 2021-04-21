@@ -1,0 +1,40 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.company {
+    background-color: white;
+    @include flex-cool;
+    text-align: center;
+    position: relative;
+    font-family: "Architects Daughter";
+
+    .company__nag {
+        font-size: 2rem;
+        padding: 50px 10px 0 10px;
+        font-family: "Architects Daughter";
+    }
+
+    .company__text {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+
+    .company__longText {
+        text-align: center;
+    }
+
+    .company__nagLine {
+        width: 150px;
+        border-top: 4px solid  $color-primary;
+        padding-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+@media (min-width: 792px) {
+    .company__longText {
+        margin: 0 100px;
+    }
+}

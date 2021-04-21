@@ -1,0 +1,82 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.form {
+    padding: 50px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    position: relative;
+
+    input {
+        outline: none;
+        border-style: none;
+        padding: 10px;
+    }
+
+    input {
+        border-bottom: 1px solid $color-black;
+    }
+
+    label[for=name] {
+        font-size: 0.7rem;
+        color: $color-black;
+        padding-left: 10px;
+    }
+
+    label[for=email] {
+        font-size: 0.7rem;
+        color: $color-black;
+        padding: 20px 0 0 10px;
+    }
+
+    label[for=text] {
+        font-size: 0.7rem;
+        color: $color-black;
+        padding: 20px 0 20px 10px;
+    }
+
+    .form__boxBtn {
+        background: $color-primary;
+        box-shadow: 5px 10px 14px $color-primary-shadow;
+        border-radius: 35px;
+        opacity: 1;
+        padding: 10px 60px;
+        text-decoration: none;
+        font-family: Architects Daughter;
+        color: black;
+        font-weight: bold;
+        font-size: 0.8rem;
+        line-height: 18px;
+        outline: none;
+        border: none;
+        width: 180px;
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .form__place {
+        width: 100%;
+    }
+}
+
+@media (min-width: 792px) {
+    .form__box {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 100px;
+        margin: 50px 0 50px 0;
+    }
+    .form__place {
+        padding-right: 50px;
+    }
+    .form {
+        padding: 0;
+        width: 100%;
+    }
+    .form__boxBtn {
+        margin-bottom: 50px;
+    }
+}

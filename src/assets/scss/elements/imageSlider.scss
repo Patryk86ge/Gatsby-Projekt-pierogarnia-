@@ -1,0 +1,29 @@
+@import "../settings/colors";
+@import "../settings/mixin";
+
+.section__gallery {
+    background-color: $color-primary;
+    width: 100vw;
+    margin-top: 50px;
+    .gallery__nag {
+        text-align: center;
+        font-size: 2rem;
+        font-family:'Architects Daughter' ;
+        padding-top: 20px;
+    }
+    .gallery__footNagLine {
+        width: 150px;
+        border-top: 2px solid $color-white;
+        padding-top: 20px;
+        display: flex;
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .gallery__footText {
+        padding: 5px 0 20px 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
