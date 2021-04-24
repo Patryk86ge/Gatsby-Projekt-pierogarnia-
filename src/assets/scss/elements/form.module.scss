@@ -17,24 +17,14 @@
     input {
         border-bottom: 1px solid $color-black;
     }
-
-    label[for=name] {
-        font-size: 0.7rem;
-        color: $color-black;
-        padding-left: 10px;
+    label {
+        margin: 0;
+    }
+    .textarea {
+        margin-bottom: 30px;
     }
 
-    label[for=email] {
-        font-size: 0.7rem;
-        color: $color-black;
-        padding: 20px 0 0 10px;
-    }
 
-    label[for=text] {
-        font-size: 0.7rem;
-        color: $color-black;
-        padding: 20px 0 20px 10px;
-    }
 
     .form__boxBtn {
         background: $color-primary;

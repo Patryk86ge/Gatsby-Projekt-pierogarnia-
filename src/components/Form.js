@@ -2,6 +2,9 @@ import React from "react"
 import * as style from "../assets/scss/elements/form.module.scss"
 
 const Form = () => {
+    const submitHandler = (e) => {
+      e.preventDefault();
+    }
   return (
     <section className={style.form}>
       <div className={style.container}>
@@ -20,21 +23,22 @@ const Form = () => {
           action= "mailto:kokot.patryk@gmail.com"
           method='post'
           className={style.form}
+          onSubmit={submitHandler}
           >
-            <label for="name">N A M E</label>
+            <label>N A M E</label>
             <input
               type="text"
               id={style.name}
               name="NAME"
             ></input>
-            <label for="email">E M A I L</label>
+            <label>E M A I L</label>
             <input
               type="email"
               id={style.email}
               name="EMAIL"
             >
             </input>
-            <label for="text">T E X T</label>
+            <label className={style.textarea}>M E S S A G E</label>
             <textarea
             rows="6"
             name="form_textarea"

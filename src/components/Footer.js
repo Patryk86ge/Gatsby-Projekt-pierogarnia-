@@ -5,6 +5,7 @@ import * as style from "../assets/scss/elements/footer.module.scss"
 // icon
 import instagram from "../assets/image/instagram.png"
 import facebook from "../assets/image/facebook.png"
+import arrowUp from '../assets/image/up-arrow.png'
 const linkInstagram = [
   "https://instagram.com/pierogi.cardiff?igshid=17uxu7femieis",
 ]
@@ -18,32 +19,19 @@ const Footer = () => {
       <div className={style.container}>
         <div className={style.menu}>
           <div className={style.footer__menu_list}>
-            <Link
-            to="/" className={style.menu_list, style.menu__liUp}>
-              UP
+            <Link to="/" className={(style.menu_list, style.menu__liUp)}>
+              UP <img src={arrowUp} alt="arrowUp" />
             </Link>
-            <Link
-            to = "#company"
-            className={style.menu_list}
-            >
+            <Link to="#company" className={style.menu_list}>
               WHY US
             </Link>
-            <Link
-            to = "#menu__foot"
-            className={style.menu_list}
-            >
+            <Link to="#menu__foot" className={style.menu_list}>
               MENU
             </Link>
-            <Link
-            to="/"
-            className={style.menu_list}
-            >
+            <Link to="/" className={style.menu_list}>
               GALLERY
             </Link>
-            <Link
-            to = "#section__contact"
-            className={style.menu_list}
-            >
+            <Link to="#section__contact" className={style.menu_list}>
               CONTACT
             </Link>
           </div>
@@ -58,14 +46,10 @@ const Footer = () => {
         </div>
         <div className={style.footer__ico}>
           <a href={linkInstagram}>
-            <img
-            src={instagram}
-            alt="instagram" />
+            <img src={instagram} alt="instagram" />
           </a>
           <a href={linkFacebook}>
-            <img
-            src={facebook}
-            alt="facebook" />
+            <img src={facebook} alt="facebook" />
           </a>
         </div>
       </div>

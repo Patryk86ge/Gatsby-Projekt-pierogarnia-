@@ -7,13 +7,15 @@ import ImageSlider from "./ImageSlider"
 import Contact from "./Contact"
 import Form from "./Form"
 import Footer from "./Footer"
-import Menu from './Menu'
+import SEO from './SEO'
+
 
 import "../assets/scss/index.scss"
 
 const Layout = () => {
   return (
     <>
+    <SEO title="Pierogarnia"/>
       <Header />
       <Company />
       <CompanyNext />
@@ -22,7 +24,7 @@ const Layout = () => {
       <Contact />
       <Form />
       <Footer />
-    </>
+          </>
   )
 }
 

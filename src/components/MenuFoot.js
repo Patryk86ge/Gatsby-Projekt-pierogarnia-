@@ -8,9 +8,7 @@ import drink from "../assets/image/menu__napoje.jpg"
 
 const MenuFoot = () => {
   return (
-    <section
-    id="menu__foot"
-    className={style.menu__foot}>
+    <section id="menu__foot" className={style.menu__foot}>
       <div className="container">
         <h2 className={style.company__nag}>MENU</h2>
         <div className={style.menu__footNagLine} />
@@ -18,21 +16,22 @@ const MenuFoot = () => {
         <div className={style.menu__footBar}>
           <div className={style.menu__footCards}>
             <div className={style.menu__footImg}>
-              <Link
-              to="/" />
-              <img
-              src={pierogi}
-              alt="Pierogi" />
+              <Link to="/Menu">
+                <img
+                src={pierogi}
+                alt="Pierogi" />
+              </Link>
             </div>
             <p className={style.menu__footText}>Pierogi</p>
           </div>
           <div className={style.menu__footCards}>
             <div className={style.menu__footImg}>
-              <Link
-              to="/" />
-              <img
-              src={drink}
-              alt="drink" />
+              <Link to="/Menu" >
+                <img
+                src={drink}
+                alt="drink"
+                />
+                </Link>
             </div>
             <p className={style.menu__footText}>Drink</p>
           </div>
